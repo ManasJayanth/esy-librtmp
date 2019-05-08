@@ -1,0 +1,24 @@
+{
+  "name": "esy-rtmpdump",
+  "version": "0.0.000",
+  "description": "rtmpdump packaged for esy",
+  "esy": {
+    "buildEnv": {
+      "prefix": "#{self.install}"
+    },
+    "buildsInSource": true,
+    "build": [
+      "#{os == 'windows' ? 'make CROSS_COMPILE=x86_64-W64-mingw32-' : 'true'}",
+      "#{os == 'darwin' ? 'make SYS=darwin' : 'true'}",
+      "#{os == 'linux' ? 'make SYS=posix' : 'true'}",
+      [
+        "make",
+        "install"
+      ]
+    ]
+  },
+  "dependencies": {
+    "openssl": "esy-packages/esy-openssl#f731e9c18f97bcf0e3246bae3072e9e63573f245"
+  },
+  "resolutions": {}
+}

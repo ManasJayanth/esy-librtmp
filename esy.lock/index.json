@@ -1,0 +1,37 @@
+{
+  "checksum": "d2e3bd2c593c2b26bfabed2137c1af21",
+  "root": "esy-rtmpdump@link-dev:./package.json",
+  "node": {
+    "openssl@archive:https://github.com/openssl/openssl/archive/OpenSSL_1_1_1b.tar.gz#sha1:1b09930a6099c6c8fa15dd6c6842e134e65e0a31@7d1854d7": {
+      "id":
+        "openssl@archive:https://github.com/openssl/openssl/archive/OpenSSL_1_1_1b.tar.gz#sha1:1b09930a6099c6c8fa15dd6c6842e134e65e0a31@7d1854d7",
+      "name": "openssl",
+      "version":
+        "archive:https://github.com/openssl/openssl/archive/OpenSSL_1_1_1b.tar.gz#sha1:1b09930a6099c6c8fa15dd6c6842e134e65e0a31",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://github.com/openssl/openssl/archive/OpenSSL_1_1_1b.tar.gz#sha1:1b09930a6099c6c8fa15dd6c6842e134e65e0a31"
+        ]
+      },
+      "overrides": [ "esy.lock/overrides/7d1854d7c3bf467562d28c52e42c9718" ],
+      "dependencies": [],
+      "devDependencies": []
+    },
+    "esy-rtmpdump@link-dev:./package.json": {
+      "id": "esy-rtmpdump@link-dev:./package.json",
+      "name": "esy-rtmpdump",
+      "version": "link-dev:./package.json",
+      "source": {
+        "type": "link-dev",
+        "path": ".",
+        "manifest": "package.json"
+      },
+      "overrides": [],
+      "dependencies": [
+        "openssl@archive:https://github.com/openssl/openssl/archive/OpenSSL_1_1_1b.tar.gz#sha1:1b09930a6099c6c8fa15dd6c6842e134e65e0a31@7d1854d7"
+      ],
+      "devDependencies": []
+    }
+  }
+}
